@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CarouselComponent, SocialsComponent, NavComponent } from './index';
+import { CarouselComponent, SocialsComponent, NavComponent, HeroComponent } from './index';
 
 
-
-let list: any[] = [ CarouselComponent, SocialsComponent, NavComponent ];
+let list: any[] = [ CarouselComponent, SocialsComponent, NavComponent, HeroComponent ];
 
 @NgModule({
   imports: [ CommonModule ],
-  declarations: [ list ],
+  declarations: [ list, HeroComponent ],
   exports: [ list ]
 })
 
