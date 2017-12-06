@@ -5,16 +5,29 @@
 .card-header {
   .main-bg();
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
   h5 {
     a {
       color: white;
       text-decoration: none;
     }
   }
+  div:last-of-type{
+    div{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 2px 5px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+  }
 }
 .line{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 15px 0;
   border-bottom: 2px solid @separator-color;
