@@ -22,23 +22,27 @@
 
 footer {
   background-color: @main-color;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   div {
     display: inline-flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: center;
-    width: 32%;
+    //.debug();
+    width: 33%;
     padding: 10px 0;
     height: 100%;
     border-right: 1px solid white;
     a {
-      display: block;
+      //display: block;
+      //.debug();
       text-decoration: none;
       color: white;
       img{
-        width: 25px;
+        width: 50%;
       }
     }
   }
