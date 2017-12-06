@@ -1,4 +1,13 @@
 @main-color: #00B2B2;
+@separator-color: #517EA2;
+@text-color: #606060;
+
+.text-color(){
+  color: @text-color;
+}
+.font(){
+  font-family: ProximaNova, Arial, sans-serif;
+}
 .main-bg(){
   background-color: @main-color;
 }
@@ -6,7 +15,12 @@
   border: 1px solid red;
   background-color: rgba(255, 138, 79, 0.57);
 }
+@font-face {
+  font-family: "ProximaNova";
+  src: url('./assets/fonts/proximanova-light.otf');
+}
 body{
   background: linear-gradient(90deg, #015F58, #053A76) no-repeat center center fixed;
   background-size: cover;
+  font-family: ProximaNova, Arial, sans-serif;
 }
