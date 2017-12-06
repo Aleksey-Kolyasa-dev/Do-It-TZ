@@ -1,5 +1,7 @@
+@import "../styles";
 .main{
-  padding: 45px 0 45px 10%;
+ // padding: 45px 0 45px 10%;
+  padding-top: 2rem;
 }
 .app-top {
   display: flex;
@@ -10,12 +12,12 @@
     justify-content: center;
     align-items: flex-start;
     padding: 0 15px;
+    .debug();
   }
   div:first-of-type{
     padding-left: 0;
   }
   div:last-of-type{
-    //padding-right: 0;
   }
 }
 
@@ -24,8 +26,9 @@
   flex-wrap: nowrap;
   padding: 25px 0;
   align-items: flex-start;
-  div{
-    display: inline-block;
+   div{
+    display: inline-flex;
     padding: 0 15px;
+    .debug();
   }
 }
