@@ -1,0 +1,62 @@
+@import "../../../styles";
+
+#calendar {
+  background-color: white;
+  .font();
+  font-size: 110%;
+  overflow-x: scroll;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    color: white;
+    .main-bg();
+    div {
+      img {
+        width: 32px;
+      }
+    }
+  }
+}
+
+.body-block {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  table {
+    font-size: 110%;
+    thead {
+      tr {
+        color: @main-color;
+        th {
+          border: 0;
+          text-align: center;
+        }
+      }
+    }
+    tbody {
+      tr {
+        .text-color();
+        border: 0 !important;
+        td {
+          border: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.d-mark {
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid @text-color;
+    width: 32px;
+    border-radius: 50%;
+  }
+}
