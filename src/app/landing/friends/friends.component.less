@@ -1,0 +1,60 @@
+@import "../../../styles";
+#friends{
+  display: block;
+  background-color: white;
+  header{
+    display: flex;
+    justify-content: center;
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5% 0;
+      img {
+        width: 70%;
+        border: 2px solid @main-color;
+        padding: 5px;
+      }
+    }
+  }
+
+  .p-info{
+    display: block;
+    text-align: center;
+    padding: 15px 0 0;
+    h4{
+      .font();
+      .text-color();
+    }
+    p{
+      color: @main-color;
+    }
+  }
+
+  footer{
+    display: flex;
+    //.debug();
+    justify-content: center;
+    align-items: center;
+    .font();
+    padding: 5% 0 8%;
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3% 18%;
+      text-decoration: none;
+      .main-bg();
+      color: white;
+      &:hover{
+      .text-hover();
+    }
+      img{
+        width: 25%;
+        margin-left: 10px;
+
+      }
+    }
+
+  }
+}
