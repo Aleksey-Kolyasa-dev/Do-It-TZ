@@ -12,7 +12,8 @@ import {
   CalendarComponent,
   SliderComponent,
   DropdownComponent,
-  TxtpanelComponent
+  TxtpanelComponent,
+  FormComponent
 } from './index';
 
 
@@ -27,12 +28,13 @@ let list: any[] = [
   CalendarComponent,
   SliderComponent,
   DropdownComponent,
-  TxtpanelComponent
+  TxtpanelComponent,
+  FormComponent
 ];
 
 @NgModule({
   imports: [ CommonModule ],
-  declarations: [ list, DropdownComponent, TxtpanelComponent ],
+  declarations: [ list, DropdownComponent, TxtpanelComponent, FormComponent ],
   exports: [ list ]
 })
 
