@@ -1,0 +1,63 @@
+@import "../../../styles";
+#dropdown{
+  .font();
+  font-size: 110%;
+}
+#dwn-menu{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background: white;
+  color: @text-color;
+  text-decoration: none;
+  font-size: 110%;
+  &:hover{
+    .main-bg();
+    color: white;
+    .caret{
+      border: 0;
+      div{
+        border-color: white;
+        img{
+          filter: invert(100%);
+        }
+      }
+    }
+  }
+  div{
+    padding: 10px;
+  }
+  div:first-of-type{
+    padding-left: 20px;
+  }
+  div.caret{
+    .flx-c();
+    border-left: 1px solid @text-color;
+    div{
+      padding: 8px;
+      .flx-c();
+      border: 1px solid @text-color;
+      border-radius: 50%;
+      img{
+        width: 10px;
+      }
+    }
+  }
+}
+
+.dwn{
+  margin-top: 15px;
+  border-radius: 0;
+  padding: 0;
+  &:before{
+    content: url("../../../assets/dropdown/arrow-u.png");
+    position: absolute;
+    top:-12px;
+    left: 90%;
+  }
+  a{
+    padding: 10px;
+    font-size: 110%;
+    border-bottom: 1px solid @separator-color;
+  }
+}
