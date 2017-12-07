@@ -8,3 +8,4 @@ export * from './weather/weather.component';
 export * from './calendar/calendar.component';
 export * from './slider/slider.component';
 export * from './dropdown/dropdown.component';
+export * from './txtpanel/txtpanel.component';

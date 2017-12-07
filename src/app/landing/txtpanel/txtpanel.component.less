@@ -1,0 +1,36 @@
+@import "../../../styles";
+
+#txtpanel {
+  background-color: #fff;
+  display: block;
+  padding: 20px 20px 1px;
+  .font();
+  font-weight: bold;
+}
+
+.txt-block {
+  margin-bottom: 25px;
+  display: flex;
+  padding: 20px 0;
+  div {
+    display: flex;
+    overflow: hidden;
+  }
+
+  > div:last-of-type {
+    justify-content: center;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid rgba(0, 0, 0, 0.26);
+      border-radius: 50%;
+      padding: 0 8px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.26);
+      cursor: pointer;
+    }
+  }
+}
+
